@@ -2,7 +2,7 @@
 
 TypeGPUを使ったWebGPUデモ集です。
 
-**デモサイト**: https://YOUR_USERNAME.github.io/AdventCalendar2025TypeGPUDemo/
+**デモサイト**: [https://sonicmoov-nakazaki.github.io/AdventCalendar2025TypeGPUDemo/](https://sonicmoov-nakazaki.github.io/AdventCalendar2025TypeGPUDemo/)
 
 ## デモ一覧
 
