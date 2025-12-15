@@ -26,6 +26,7 @@ import { generateDomeVertices } from './geometry/dome';
 import { generateTrunkVertices, generateLeavesVertices, generateStarVertices } from './geometry/tree';
 import { generateSnowFloorVertices, generateGroundVertices } from './geometry/ground';
 
+import woodTextureUrl from '/wood_texture.webp?url';
 
 const canvas = document.getElementById('canvas') as HTMLCanvasElement;
 
@@ -270,7 +271,7 @@ async function main(): Promise<void> {
   });
 
   // ===== 地面テクスチャのロード =====
-  const groundTexture = await loadTexture(root.device, '/wood_texture.webp');
+  const groundTexture = await loadTexture(root.device, woodTextureUrl);
   const groundTextureView = groundTexture.createView();
 
   const groundSampler = root.device.createSampler({
