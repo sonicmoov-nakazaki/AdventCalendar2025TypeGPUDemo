@@ -1,0 +1,21 @@
+{
+  "name": "typegpu-playground",
+  "version": "1.0.0",
+  "description": "TypeGPU学習用プレイグラウンド",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "typegpu": "^0.8.2",
+    "wgpu-matrix": "^3.4.0"
+  },
+  "devDependencies": {
+    "@webgpu/types": "^0.1.49",
+    "typescript": "^5.3.3",
+    "unplugin-typegpu": "^0.8.0",
+    "vite": "^5.4.11"
+  }
+}

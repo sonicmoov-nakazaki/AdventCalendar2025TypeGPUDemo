@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snow Dome - TypeGPU Playground</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        background: #1a1a2e;
+        color: #eee;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      h1 {
+        color: #00d9ff;
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+      }
+      .breadcrumb {
+        font-size: 0.85rem;
+      }
+      .breadcrumb a {
+        color: #888;
+        text-decoration: none;
+      }
+      .breadcrumb a:hover {
+        color: #00d9ff;
+      }
+      .canvas-container {
+        border: 1px solid #333;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+        background: #000;
+      }
+      .info {
+        margin-top: 16px;
+        padding: 12px 20px;
+        background: #16213e;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        color: #aaa;
+      }
+      #error {
+        display: none;
+        color: #ff6b6b;
+        background: #2a1a1a;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+        max-width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p class="breadcrumb"><a href="index.html">TypeGPU Demos</a> /</p>
+      <h1>Snow Dome</h1>
+    </header>
+    <div class="canvas-container">
+      <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    <p class="info">雪が降り注ぐ3Dスノードーム</p>
+    <div id="error"></div>
+    <script type="module" src="/src/snowdome/index.ts"></script>
+  </body>
+</html>

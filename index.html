@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeGPU Demos</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        background: #1a1a2e;
+        color: #eee;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+      }
+      h1 {
+        margin-bottom: 10px;
+        color: #00d9ff;
+      }
+      .title {
+        color: #888;
+        margin-bottom: 40px;
+      }
+      .demos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        max-width: 900px;
+        width: 100%;
+      }
+      .demo-card {
+        background: #16213e;
+        border-radius: 12px;
+        padding: 24px;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s, box-shadow 0.2s;
+        border: 1px solid #333;
+      }
+      .demo-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 217, 255, 0.15);
+        border-color: #00d9ff;
+      }
+      .demo-card h2 {
+        color: #00d9ff;
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+      }
+      .demo-card p {
+        color: #aaa;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+      .demo-card .tag {
+        display: inline-block;
+        background: #0a0a1a;
+        color: #00d9ff;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        margin-top: 12px;
+      }
+      footer {
+        margin-top: 60px;
+        color: #666;
+        font-size: 0.85rem;
+      }
+      footer a {
+        color: #00d9ff;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">TypeGPU Playground</h1>
+
+    <div class="demos">
+      <a href="triangle.html" class="demo-card">
+        <h2>Triangle</h2>
+        <p>基本的な三角形描画 - GPUプログラミングの「Hello World」</p>
+        <span class="tag">基本</span>
+      </a>
+
+      <a href="particle.html" class="demo-card">
+        <h2>Particle Simulation</h2>
+        <p>重力物理シミュレーションを使ったGPUパーティクルシステム</p>
+        <span class="tag">Compute Shader</span>
+      </a>
+
+      <a href="snowdome.html" class="demo-card">
+        <h2>Snow Dome</h2>
+        <p>雪が降り注ぐクリスマススノードーム</p>
+        <span class="tag">3D / Compute Shader</span>
+      </a>
+    </div>
+
+    <footer>
+      Powered by <a href="https://docs.swmansion.com/TypeGPU/" target="_blank">TypeGPU</a>
+    </footer>
+  </body>
+</html>
